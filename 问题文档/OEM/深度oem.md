@@ -10,6 +10,7 @@ logo.png (注意,要根据实际情况查看图片名称，然后进行替换)
 注意：图片为450x200的svg矢量图,前景色需要浅色,方便在深色背景呈现.
 ```
 favicon.png
+```
 ![image](https://github.com/lyz-970124/work/blob/master/%E5%9B%BE%E7%89%87/favicon.png)
 ```
 注意：大小为：48x48或64x64
