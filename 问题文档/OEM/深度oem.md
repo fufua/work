@@ -9,8 +9,10 @@
 ```
 #### favicon.png(注意：大小为60×60或48×48)
 ![image](https://github.com/lyz-970124/work/blob/master/%E5%9B%BE%E7%89%87/favicon.png)
-#### 在Controller控制节点上创建前端目录:mkdir /etc/csphere/frontend
-#### 将设置好的.png和.svg上传到前端目录下
+```
+在Controller控制节点上创建前端目录:mkdir /etc/csphere/frontend
+将设置好的.png和.svg上传到前端目录下
+```
 ## 三、深度oem
 ![image](https://github.com/lyz-970124/work/blob/master/%E5%9B%BE%E7%89%87/%E6%B7%B1%E5%BA%A6OEM.png)
 
