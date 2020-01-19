@@ -12,18 +12,14 @@
 	   umount /media/cdimage(卸载镜像)
 	   apt-cache search iscsi	搜索包
 	   apt-get  install -y  iscsi	安装相关软件包
-![img](E:/%E6%9C%89%E9%81%93%E4%BA%91/lyz18330457009@163.com/5f6e936034c648d68575a3eae1ab09b1/clipboard.png)
 	   netstat  -a  |  grep  iscsi 	查看相关状态
 	   systemctl  status  iscsid	查看运行状态
 	4、查找存储对外提供的逻辑卷（有多个IP就查找多次）
 	   iscsiadm -m discovery -t sendtargets -p 存储IP:3260
-![1569305625503](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1569305625503.png)
 	5、映射逻辑卷到系统中
 	   iscsiadm -m node -T iqn.2004-01.com.storbridge:block01-wt -p 192.16.10.188:3260 -l
-![1569305588633](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1569305588633.png)
 	6、设置开机自动映射
 	   iscsiadm -m node -T iqn.2004-01.com.storbridge:block02-wt  -p 192.16.10.188:3260 --op update -n node.startup -v automatic
-![1569305792664](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1569305792664.png)
 	7、删除已经存在的iSCSI信息
 	   iscsiadm --mode node -o delete –targetnameiqn.2004-01.com.storbridge:block02-wt 192.16.10.188:3260
 	8、查看是否映射成功
@@ -41,7 +37,6 @@
 	     /dev/sdb1 /media/C ntfs _netdev 0 0(**注意：iSCSI的默认类型为'_netdev'，不为defaults**)
 	   这里的sdb对应你的分区，media对应要挂载到的目录，ntfs是分区的文件类型 
 	10、删除分区（完全的逆向操作）
-![1569306770603](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1569306770603.png)
 	   umount /dev/sdb1  或者  umount /mnt
 	   vi /etc/fstab  删除开机自动挂载
 	   parted /dev/sdb1   进入磁盘
