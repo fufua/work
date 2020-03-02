@@ -86,5 +86,5 @@
 10、测试，在Gitlab测试项目中新建README.md文件，查看Jenkins是否会自动构建
 ```
 
-![image]()
+![image](https://github.com/lyz-970124/work/blob/master/%E5%9B%BE%E7%89%87/CICD/%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA.png)
 
