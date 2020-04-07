@@ -52,11 +52,11 @@
 
    	 	iface eth0 inet static     #配置静态IP
 
-   		 address 192.168.11.88      #IP地址
+   		address 192.168.11.88      #IP地址
 
-​            netmask 255.255.255.0      #子网掩码
+            	netmask 255.255.255.0      #子网掩码
 
-​    		gateway 192.168.11.1       #默认网关（注意：网关只能有一个）
+    		gateway 192.168.11.1       #默认网关（注意：网关只能有一个）
 
 dns的存放路径：/etc/resolv.conf
 
