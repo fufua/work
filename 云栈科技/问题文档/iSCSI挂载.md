@@ -22,9 +22,9 @@
 
 2、清理检查cloud-init配置文件
 
- 	cd /usr/lib/python2.7/site-packages/cloudinit/sources/
+<200b>	 cd /usr/lib/python2.7/site-packages/cloudinit/sources/
 
- 	rm -rf __init__.pyc  	 
+<200b>	 rm -rf __init__.pyc  	 
 
 ​	 rm -rf __init__.pyo  	  
 
