@@ -6,7 +6,7 @@
 
 ​	vim  /etc/sysconfig/network-scripts/ifcfg-eth0
 
-![image](1.png)
+![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/iSCSI/1.png)
 
 解决办法：
 
@@ -76,25 +76,25 @@ dns的存放路径：/etc/resolv.conf
 
 ​	systemctl  status  iscsid		查看运行状态
 
-![image](2.png)
+![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/iSCSI/2.png)
 
 3、查找存储对外提供的逻辑卷（有多个IP就查找多次）
 
 ​	 iscsiadm -m discovery -t sendtargets -p 存储IP:3260
 
-![image](3.png)
+![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/iSCSI/3.png)
 
 映射逻辑卷到系统中
 
 ​     iscsiadm -m node -T iqn.2004-01.com.storbridge:block01-wt -p 192.16.10.188:3260 -l
 
-![image](4.png)
+![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/iSCSI/4.png)
 
 设置开机自动映射
 
 ​     iscsiadm -m node -T iqn.2004-01.com.storbridge:block02-wt  -p 192.16.10.188:3260 --op update -n node.startup -v automatic
 
-![image](5.png)
+![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/iSCSI/5.png)
 
 删除已经存在的iSCSI信息
 
@@ -130,7 +130,7 @@ dns的存放路径：/etc/resolv.conf
 
 5、删除分区（完全的逆向操作）
 
-![image](6.png)
+![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/iSCSI/6.png)
 
 ​	umount /dev/sdb1（或者  umount /mnt）
 
