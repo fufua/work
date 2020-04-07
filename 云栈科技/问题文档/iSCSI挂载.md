@@ -26,11 +26,11 @@
 
  	rm -rf init.pyc  	 
 
-​	 rm -rf init.pyo  	  
+ 	rm -rf init.pyo  	  
 
-​	 rm -rf /var/lib/cloud/*  	  
+	rm -rf /var/lib/cloud/*  	  
 
-​	 rm -rf /var/log/cloud-init* 
+	rm -rf /var/log/cloud-init* 
 
  	cloud-init init --local
 
