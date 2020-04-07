@@ -22,11 +22,11 @@
 
 2、清理检查cloud-init配置文件
 
-<200b>	 cd /usr/lib/python2.7/site-packages/cloudinit/sources/
+ 	cd /usr/lib/python2.7/site-packages/cloudinit/sources/
 
-<200b>	 rm -rf __init__.pyc  	 
+ 	rm -rf init.pyc  	 
 
-​	 rm -rf __init__.pyo  	  
+​	 rm -rf init.pyo  	  
 
 ​	 rm -rf /var/lib/cloud/*  	  
 
@@ -124,9 +124,9 @@ dns的存放路径：/etc/resolv.conf
 
 ​	vi /etc/fstab   
 
-​		/dev/sdb1 /media/C ntfs defaults 0 0(**注意：iSCSI的默认类型为'_netdev'，不为defaults**)
+​		/dev/sdb1 /media/C ntfs ___netdev__ 0 0(**注意：iSCSI的默认类型为'_netdev'，不为defaults**)
 
-这里的sdb对应你的分区，media对应要挂载到的目录，ntfs是分区的文件类  型 
+这里的sdb对应你的分区，media对应要挂载到的目录，ntfs是分区的文件类型 
 
 5、删除分区（完全的逆向操作）
 
