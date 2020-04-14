@@ -100,11 +100,11 @@
 
 ​			docker network ls			   查看docker网络信息
 
-![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/cSphere%E6%9B%B4%E6%94%B9IP%E5%9C%B0%E5%9D%80/14.png)
+![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/cSphere%E6%9B%B4%E6%94%B9IP%E5%9C%B0%E5%9D%80/15.png)
 
 ​			docker   network  inspect  br0				查看br0的信息
 
-![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/cSphere%E6%9B%B4%E6%94%B9IP%E5%9C%B0%E5%9D%80/15.png)
+![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/cSphere%E6%9B%B4%E6%94%B9IP%E5%9C%B0%E5%9D%80/16.png)
 
 如果不一致，需要删除docker网络，然后重启docker
 
