@@ -8,7 +8,7 @@
 
 ​				cat  /etc/sysconfig/network-scripts/ifcfg-ens33
 
-![1586423109989](C:\Users\liuyz\AppData\Roaming\Typora\typora-user-images\1586423109989.png)
+![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/cSphere%E6%9B%B4%E6%94%B9IP%E5%9C%B0%E5%9D%80/1.png)
 
 2、停止csphere相关服务
 
@@ -18,19 +18,19 @@
 
 ​			vi 	/etc/csphere/csphere-agent.env
 
-![1586423592593](C:\Users\liuyz\AppData\Roaming\Typora\typora-user-images\1586423592593.png)
+![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/cSphere%E6%9B%B4%E6%94%B9IP%E5%9C%B0%E5%9D%80/2.png)
 
 ​			vi 	csphere-etcd2-controller.env
 
-![1586423770358](C:\Users\liuyz\AppData\Roaming\Typora\typora-user-images\1586423770358.png)
+![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/cSphere%E6%9B%B4%E6%94%B9IP%E5%9C%B0%E5%9D%80/3.png)
 
 ​			vi 	csphere-public.env
 
-​									![1586423858371](C:\Users\liuyz\AppData\Roaming\Typora\typora-user-images\1586423858371.png)
+![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/cSphere%E6%9B%B4%E6%94%B9IP%E5%9C%B0%E5%9D%80/4.png)
 
 ​			vi 	inst-opts.env
 
-​				![1586423957357](C:\Users\liuyz\AppData\Roaming\Typora\typora-user-images\1586423957357.png)
+![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/cSphere%E6%9B%B4%E6%94%B9IP%E5%9C%B0%E5%9D%80/5.png)
 
 3、启动csphere服务
 
@@ -38,7 +38,7 @@
 
 4、登录csphere平台，查看主机中的控制节点主机是否出现，并且删除原来IP地址的主机
 
-![1586424439081](C:\Users\liuyz\AppData\Roaming\Typora\typora-user-images\1586424439081.png)
+![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/cSphere%E6%9B%B4%E6%94%B9IP%E5%9C%B0%E5%9D%80/6.png)
 
 二、计算节点
 
@@ -46,7 +46,7 @@
 
 ​				cat   /etc/sysconfig/network-scripts/ifcfg-br0
 
-​												![1586424691482](C:\Users\liuyz\AppData\Roaming\Typora\typora-user-images\1586424691482.png)
+![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/cSphere%E6%9B%B4%E6%94%B9IP%E5%9C%B0%E5%9D%80/7.png)
 
 2、停止csphere相关服务
 
@@ -54,27 +54,27 @@
 
 3、登录cpshere平台，获取COS验证码
 
-![1586425084724](C:\Users\liuyz\AppData\Roaming\Typora\typora-user-images\1586425084724.png)
+![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/cSphere%E6%9B%B4%E6%94%B9IP%E5%9C%B0%E5%9D%80/8.png)
 
-![1586425108678](C:\Users\liuyz\AppData\Roaming\Typora\typora-user-images\1586425108678.png)
+![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/cSphere%E6%9B%B4%E6%94%B9IP%E5%9C%B0%E5%9D%80/9.png)
 
 3、更改计算节点csphere平台的相关配置文件
 
 ​			vi   /etc/csphere/csphere-agent.env
 
-![1586425168757](C:\Users\liuyz\AppData\Roaming\Typora\typora-user-images\1586425168757.png)
+![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/cSphere%E6%9B%B4%E6%94%B9IP%E5%9C%B0%E5%9D%80/10.png)
 
 ​			vi   /etc/csphere/csphere-etcd2-agent.env
 
-![1586425580561](C:\Users\liuyz\AppData\Roaming\Typora\typora-user-images\1586425580561.png)
+![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/cSphere%E6%9B%B4%E6%94%B9IP%E5%9C%B0%E5%9D%80/11.png)
 
 ​			vi csphere-public.env
 
-​								![1586425379838](C:\Users\liuyz\AppData\Roaming\Typora\typora-user-images\1586425379838.png)
+![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/cSphere%E6%9B%B4%E6%94%B9IP%E5%9C%B0%E5%9D%80/12.png)
 
 ​			vi 	inst-opts.env
 
-![1586425502091](C:\Users\liuyz\AppData\Roaming\Typora\typora-user-images\1586425502091.png)
+![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/cSphere%E6%9B%B4%E6%94%B9IP%E5%9C%B0%E5%9D%80/13.png)
 
 4、启动服务
 
@@ -100,11 +100,11 @@
 
 ​			docker network ls			   查看docker网络信息
 
-![1586491902628](C:\Users\liuyz\AppData\Roaming\Typora\typora-user-images\1586491902628.png)
+![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/cSphere%E6%9B%B4%E6%94%B9IP%E5%9C%B0%E5%9D%80/14.png)
 
 ​			docker   network  inspect  br0				查看br0的信息
 
-![1586492024031](C:\Users\liuyz\AppData\Roaming\Typora\typora-user-images\1586492024031.png)
+![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/cSphere%E6%9B%B4%E6%94%B9IP%E5%9C%B0%E5%9D%80/15.png)
 
 如果不一致，需要删除docker网络，然后重启docker
 
@@ -118,17 +118,17 @@
 
 1、问题描述：添加docker  br0网络失败，显示报错如图
 
-![](E:\图片\Gitlab\cSphere更改IP地址\申威.png)
+![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/cSphere%E6%9B%B4%E6%94%B9IP%E5%9C%B0%E5%9D%80/16.png)
 
 创建容器时报错如图
 
-![](E:\图片\Gitlab\cSphere更改IP地址\20.png)
+![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/cSphere%E6%9B%B4%E6%94%B9IP%E5%9C%B0%E5%9D%80/17.png)
 
 出现原因：net-plugin服务不能连接etcd数据库，导致添加docker  br0失败
 
 拓展：net-plugin服务未启动，报错如下图
 
-![](E:\图片\Gitlab\cSphere更改IP地址\申威dockeripam未启动.png)
+![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/cSphere%E6%9B%B4%E6%94%B9IP%E5%9C%B0%E5%9D%80/18.png)
 
 修改/etc/systemd/system/multi-user.target.wants/csphere-dockeripam.service
 
@@ -197,8 +197,8 @@
 
 ​			docker    network    ls					查看容器网络
 
-![](E:\图片\Gitlab\cSphere更改IP地址\15.png)
+![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/cSphere%E6%9B%B4%E6%94%B9IP%E5%9C%B0%E5%9D%80/15.png)
 
 ​			docker    network    inspect    br0 				查看br0网络详细信息
 
-![](E:\图片\Gitlab\cSphere更改IP地址\16.png)
+![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/cSphere%E6%9B%B4%E6%94%B9IP%E5%9C%B0%E5%9D%80/16.png)
