@@ -118,11 +118,11 @@
 
 1、问题描述：添加docker  br0网络失败，显示报错如图
 
-![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/cSphere%E6%9B%B4%E6%94%B9IP%E5%9C%B0%E5%9D%80/16.png)
+![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/cSphere%E6%9B%B4%E6%94%B9IP%E5%9C%B0%E5%9D%80/17.png)
 
 创建容器时报错如图
 
-![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/cSphere%E6%9B%B4%E6%94%B9IP%E5%9C%B0%E5%9D%80/17.png)
+![image](https://github.com/Lyz-github/work/blob/master/%E5%9B%BE%E7%89%87/cSphere%E6%9B%B4%E6%94%B9IP%E5%9C%B0%E5%9D%80/19.png)
 
 出现原因：net-plugin服务不能连接etcd数据库，导致添加docker  br0失败
 
